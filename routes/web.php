@@ -14,6 +14,6 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('/', [RegisterContoller::class, 'create']);
+Route::get('/', [RegisterController::class, 'create']);
 
 Route::post('/register', [RegisterController::class, "store"])->name('register');
